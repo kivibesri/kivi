@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="7; url='http://kiviplayerkiviplayerkiviplayerkiviplayerkiviplayerkiviplayerkiv.kivi-besre.workers.dev/?login=k111111&password=k111111'" />
-  </head>
-  <body>
-    <p>Please follow <a href="http://kiviplayerkiviplayerkiviplayerkiviplayerkiviplayerkiviplayerkiv.kivi-besre.workers.dev/?login=k111111&password=k111111">this link</a>.</p>
-  </body>
-</html>
+export default {
+  async fetch(request) {
+    const destinationURL = 'https://example.com';
+    const statusCode = 301;
+    return Response.redirect(destinationURL, statusCode);
+  },
+};
